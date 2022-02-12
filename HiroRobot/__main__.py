@@ -83,12 +83,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-Hiro_IMG = "https://telegra.ph/file/6d3e3ef24f64fb6e35df0.jpg"
+Hiro_IMG = "https://telegra.ph/file/d53aec1581f028d3f02b6.jpg"
 
 PM_START_TEXT = """
-🌸══════「 [{}](https://telegra.ph/file/ccc9b76512bfdda7036f0.jpg) 」══════🌸
+🌸══════「 [{}](https://telegra.ph/file/fb19dd8b1a541cd4be613.mp4) 」══════🌸
 *ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝐍𝐞𝐳𝐮𝐤𝐨 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ꜱᴇᴠᴇʀᴀʟ ꜱᴘᴇᴄɪᴀʟɪᴛɪᴇꜱ.*
+*I am Mai Sakurajima, an anime themed advanced group management bot with several specialities .*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ╔═══════•❃•❀•❃════════╗
 ✓• *Uᴘᴛɪᴍᴇ:* {}
@@ -96,7 +96,7 @@ PM_START_TEXT = """
 ✓• {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*
 ╚═══════•❃•❀•❃════════╝
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴅᴇᴍᴏɴ ᴀʙɪʟɪᴛɪᴇs ××
+➛Try the help button /help to know my abilities ;)  ××
 """
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -226,7 +226,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/NezukoXRobot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Mai_SanxRoBot?startgroup=new"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="Hiro_"),
@@ -787,7 +787,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 945137470:
+        if OWNER_ID != 1492076351:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
