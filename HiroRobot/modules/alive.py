@@ -9,7 +9,7 @@ from HiroRobot.events import register
 from HiroRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/d53aec1581f028d3f02b6.jpg"
+PHOTO = "https://telegra.ph/file/0196966a3a2aa4ad341e2.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
